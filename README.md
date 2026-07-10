@@ -1,46 +1,50 @@
-# Portafolio Profesional: QA Manual | Analista Funcional | Scrum Master Jr. Eduardo Gonzalez
+# 💼 Portafolio Profesional: QA Manual | Analista Funcional | Scrum Master Jr.
 
-¡Bienvenido! En este repositorio presento mi experiencia técnica y analítica aplicada al aseguramiento de calidad de software (QA), la gestión de requerimientos y la facilitación de marcos de trabajo ágiles.
+¡Bienvenido! En este espacio presento mi ecosistema de proyectos donde combino el aseguramiento de la calidad de software (QA), la ingeniería de requerimientos (Análisis Funcional) y la facilitación de marcos de trabajo ágiles (Scrum). 
 
-## 🚀 Sobre mí
-Especialista con un perfil integral que combina el **QA Manual**, el **Análisis Funcional** y la gestión como **Scrum Master Jr.** Mi enfoque principal es asegurar la entrega de productos de alta calidad, optimizando los procesos de equipo en entornos **Scrum** y utilizando **Jira** como herramienta central de gestión.
-
----
-
-## 📂 Contenido del Portafolio
-
-### 📋 [Documentación Funcional](./Documentacion-Funcional/)
-En esta sección demuestro mi capacidad para documentar requerimientos técnicos:
-* **Historias de Usuario:** Redacción bajo estándares profesionales (Como/Quiero/Para) con criterios de aceptación detallados.
-
-### 🐞 [Pruebas Manuales](./Pruebas-Manuales/)
-Evidencia de ejecución de testing y reporte de defectos:
-* **Reporte de Bugs:** Documentación técnica de fallos de concurrencia, latencia y conectividad encontrados durante ciclos reales de prueba.
+Mi enfoque está centrado en mitigar riesgos de software, traducir necesidades de negocio en especificaciones técnicas claras y optimizar la entrega de valor de los equipos de desarrollo.
 
 ---
 
-### 🚀 [Gestión Agile (Scrum)](./Gestion-Agile/)
-Evidencia de mis habilidades como facilitador y gestor de procesos:
-* **Framework Scrum:** Facilitación de ceremonias y mejora continua.
-* **Jira:** Administración de backlog y seguimiento de versiones.
+## 📂 Estructura del Portafolio
+
+### 📋 [01. Documentación Funcional](./Documentacion-Funcional/)
+Transformación de necesidades de negocio en artefactos listos para desarrollo:
+* **Historias de Usuario:** Redacción bajo estándares profesionales (Como / Quiero / Para) con Criterios de Aceptación detallados.
+* **Especificaciones Funcionales:** Modelado de reglas de negocio y flujos de trabajo de los módulos analizados.
+
+### 🐞 [02. Pruebas Manuales & Gestión de Defectos](./Pruebas-Manuales/)
+Garantía de calidad mediante el diseño y ejecución estratégica de pruebas:
+* **Matrices de Casos de Prueba:** Cobertura de escenarios funcionales, no funcionales y de caja negra.
+* **Ciclo de Vida de Bugs:** Documentación técnica de fallos (concurrencia, latencia y conectividad) detectados durante los ciclos de prueba.
+
+### 🚀 [03. Gestión Agile - Scrum](./Gestion-Agile/)
+Facilitación de procesos y métricas de rendimiento de equipo:
+* **Framework Scrum:** Gestión de ceremonias y enfoque en la mejora continua del equipo.
+* **Administración en Jira:** Configuración de tableros Kanban/Scrum, priorización de Backlog y estimación de Story Points.
+
+### ⚡ [04. Pruebas de API con Postman](./Pruebas-API-Postman/) *(¡Nueva sección para tu nueva carpeta!)*
+Verificación y validación de la capa de servicios (Backend):
+* **Colecciones CRUD:** Diseño de pruebas manuales y flujos funcionales de peticiones (POST, GET, PUT, DELETE).
+* **Análisis Técnico:** Validación de códigos de estado HTTP, control de errores y documentación técnica de endpoints.
 
 ---
 
-## 🛠 Herramientas y Metodologías
-* **Gestión:** Jira Software, Confluence, Trello.
-* **Metodologías:** Scrum, Kanban.
-* **Documentación:** Markdown, SQL básico.
-* **Testing:** Manual Testing, Black-box Testing.
+## 🛠️ Stack Técnico & Metodologías
+* **Gestión y Agilidad:** Jira Software, Confluence, Trello | Scrum, Kanban.
+* **Testing:** Manual Testing, Black-box Testing, API Testing (Postman), Reporte de Bugs.
+* **Base de Datos:** Consultas SQL para verificación de persistencia de datos.
+* **Documentación:** Markdown técnico, Especificaciones Funcionales, Historias de Usuario.
 
 ---
 
 ## 🎓 Certificaciones y Formación
 * **QA Manual & Automatización** - Talento Lab.
 * **Scrum Foundation Professional Certificate** (SFPC).
-* **Gestión de Proyectos en Jira.**
+* **Gestión de Proyectos en Jira Software.**
 
 ---
 
 ## 📩 Contacto
-* **LinkedIn:** https://www.linkedin.com/in/eduardoenriquegonzalezteuffel/
+* **LinkedIn:** [Eduardo Enrique Gonzalez Teuffel](https://www.linkedin.com/in/eduardoenriquegonzalezteuffel/)
 * **Email:** eduardogonzalezteuffel@gmail.com
