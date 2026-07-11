@@ -23,7 +23,7 @@ Facilitación de procesos y métricas de rendimiento de equipo:
 * **Framework Scrum:** Gestión de ceremonias y enfoque en la mejora continua del equipo.
 * **Administración en Jira:** Configuración de tableros Kanban/Scrum, priorización de Backlog y estimación de Story Points.
 
-### ⚡ [04. Pruebas de API con Postman](./Pruebas-API-Postman/) *(¡Nueva sección para tu nueva carpeta!)*
+### ⚡ [04. Pruebas de API con Postman](./Pruebas-API-Postman/)
 Verificación y validación de la capa de servicios (Backend):
 * **Colecciones CRUD:** Diseño de pruebas manuales y flujos funcionales de peticiones (POST, GET, PUT, DELETE).
 * **Análisis Técnico:** Validación de códigos de estado HTTP, control de errores y documentación técnica de endpoints.
@@ -31,17 +31,19 @@ Verificación y validación de la capa de servicios (Backend):
 ---
 
 ## 🛠️ Stack Técnico & Metodologías
-* **Gestión y Agilidad:** Jira Software, Confluence, Trello | Scrum, Kanban.
-* **Testing:** Manual Testing, Black-box Testing, API Testing (Postman), Reporte de Bugs.
+* **Gestión y Agilidad:** Jira Software, Confluence, Trello | Scrum, Kanban, Lean.
+* **Testing:** Manual Testing, Black-box Testing, API Testing (Postman), Zephyr Scale/Squad (Gestión de Casos de Prueba en Jira), Reporte de Bugs.
 * **Base de Datos:** Consultas SQL para verificación de persistencia de datos.
-* **Documentación:** Markdown técnico, Especificaciones Funcionales, Historias de Usuario.
+* **Documentación:** Markdown técnico, Especificaciones Funcionales, Historias de Usuario (Gherkin).
 
 ---
 
 ## 🎓 Certificaciones y Formación
-* **QA Manual & Automatización** - Talento Lab.
-* **Scrum Foundation Professional Certificate** (SFPC).
-* **Gestión de Proyectos en Jira Software.**
+* **Historias de Usuario - Cómo escribir User Story** - Udemy.
+* **Scrum Avanzado** - LinkedIn Learning.
+* **Gestión de Proyectos Scrum con Jira Software** - Udemy / LinkedIn.
+* **Fundamentos de la Programación: Pruebas de Software y QA** - LinkedIn Learning.
+* **Fundamentos de Kanban para Desarrollo de Software** - LinkedIn Learning.
 
 ---
 
