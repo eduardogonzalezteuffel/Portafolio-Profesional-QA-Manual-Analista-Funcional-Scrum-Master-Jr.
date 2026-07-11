@@ -1,78 +1,60 @@
-# Reporte de Defecto: Error de Concurrencia en Registro
+# 🐛 Registro Técnico de Defectos (Bug Reports)
 
-**📝ID:** TC-001
-
-### Descripción del problema
-Al cliquear más de una vez el botón "registrate", el sistema no redirecciona y arroja error al momento de la redirección.
-
-### Pasos para reproducir:
-1. Abrir el portal: https://talentolab-test.netlify.app/
-2. Cliquear el botón "Registrate" consecutivamente
-
-### Resultados
-* **Resultado esperado:** Redireccionar a la sección de completar datos de nuevo usuario.
-* **Resultado obtenido:** El sistema arroja un modal de error al momento de redireccionar.
-
-### Clasificación
-* **Severidad:** Alta (Riesgo de abandono del portal y falta de seguridad percibida).
-* **Prioridad:** Alta (Afecta la conversión de nuevos usuarios).
-
-### Entorno
-* **SO:** Windows 10/11
-* **Navegadores:** Chrome, Mozilla y Safari
+En este documento se detallan los fallos de software identificados, clasificados y documentados durante los ciclos de ejecución de pruebas en el portal de registro.
 
 ---
 
-# Reporte de Defecto: Error de en Registro sin acceso a internet
+## 🐜 BUG-001: Error de Concurrencia en Redirección de Registro
 
-**📝ID:** TC-002
+* **Título del Defecto:** Error de concurrencia (Race Condition) al realizar clics consecutivos en el botón "Registrate".
+* **Severidad:** Alta 🔴 | **Prioridad:** Alta ⚡
+* **Componente:** Módulo de Autenticación / Registro de Usuarios.
+* **Entorno:** Windows 10/11 | Navegadores: Google Chrome, Mozilla Firefox, Safari.
+* **URL:** `https://talentolab-test.netlify.app/`
 
-### Descripción del problema
-Al cliquear el boton "registrate" el sistema no muestra modal de aviso error sin conexion
+### 📋 Pasos para Reproducir
+1. Navegar al portal principal de la aplicación.
+2. Hacer clic de manera consecutiva y rápida (múltiples clics) en el botón **"Registrate"**.
+3. Observar el comportamiento de la interfaz durante la transición de pantallas.
 
-### Pasos para reproducir:
-1. Abrir el portal https://talentolab-test.netlify.app/ 
-2. Desactivar el acceso a internet del dispositivo
-3. Cliquear el boton "Registrate" 
-4. Al desplazarse por el Home Page (no se muestra sintomas de estar sin conexion).
+### 📊 Resultados de la Prueba
+* **Resultado Esperado:** El sistema debe mitigar el doble clic (deshabilitando temporalmente el botón tras la primera interacción) y redireccionar limpiamente a la sección de entrada de datos del nuevo usuario.
+* **Resultado Obtenido:** El sistema no bloquea las peticiones concurrentes, interrumpe el flujo y despliega un modal genérico de error en pantalla al momento de procesar la redirección.
 
-### Resultados
-* **Resultado esperado:** Despliegue de modal de aviso con mensaje de Alerta "sin conexion a internet".
-* **Resultado obtenido:** El sistema no despliega modal de alerta con mensaje "sin conexion a internet".
+---
 
-### Clasificación
-* **Severidad:** Media (ya que esto puede hacer que los usuarios no esten concientes de la falta de conexion y abandonen el sitio).
-* **Prioridad:** Alta (Esto podria oacionar que los usuarios abandonen en sitio al no estar al tanto de la falta de conexion).
+## 🐜 BUG-002: Ausencia de Control de Excepciones de Red (Modo Offline)
 
-### Entorno
-* **SO:** Windows 10/11
-* **Navegadores:** Chrome, Mozilla y Safari
+* **Título del Defecto:** Falta de manejo de errores y alertas visuales al intentar acceder al flujo de registro sin conexión a internet.
+* **Severidad:** Media 🟡 | **Prioridad:** Alta ⚡
+* **Componente:** Capa de Red / Interfaz de Usuario (UI).
+* **Entorno:** Windows 10/11 | Navegadores: Google Chrome, Mozilla Firefox, Safari.
+* **Precondición:** El dispositivo de pruebas debe encontrarse sin acceso a internet (Modo Avión / Red Desconectada).
 
-* ---
+### 📋 Pasos para Reproducir
+1. Abrir el portal principal de la aplicación estando en línea.
+2. Interrumpir o desactivar por completo la conexión a internet del dispositivo.
+3. Hacer clic en el botón **"Registrate"**.
+4. Desplazarse de manera vertical por la Home Page del sitio.
 
-* # Reporte de Defecto: Latencia excesiva en la redireccion del boton "Registrate"
+### 📊 Resultados de la Prueba
+* **Resultado Esperado:** El sistema debe detectar el estado offline de la sesión, mitigar la acción y desplegar un modal o banner de alerta con el mensaje descriptivo: *"Sin conexión a internet. Verifique su red"*.
+* **Resultado Obtenido:** El sistema no maneja la excepción de red; no se muestra ningún síntoma o alerta visual de desconexión, permitiendo la navegación libre por el Home sin advertir al usuario.
 
-**📝ID:** TC-003
+---
 
-### Descripción del problema
-Al cliquear el boton "Registrate" el sistema redirecciona pasados los 10 segundos
+## 🐜 BUG-003: Latencia Excesiva en la Respuesta del Servidor
 
-### Pasos para reproducir:
-1. Abrir el portal https://talentolab-test.netlify.app/ 
-2. Cliquear el boton "Registrate" 
-3. Cronometrar el tiempo de respuesta desde el clic hasta la redireccion 
+* **Título del Defecto:** Degradación de performance y tiempos de respuesta superiores a los 10 segundos en la redirección del flujo de registro.
+* **Severidad:** Media 🟡 | **Prioridad:** Media 🟢
+* **Componente:** Rendimiento de API / Redirección de Enrutador.
+* **Entorno:** Windows 10/11 | Navegadores: Google Chrome, Mozilla Firefox, Safari.
 
+### 📋 Pasos para Reproducir
+1. Ingresar al portal web externo.
+2. Hacer clic en el botón **"Registrate"**.
+3. Cronometrar el tiempo exacto transcurrido desde el evento del clic hasta la carga completa de la pantalla de destino.
 
-### Resultados
-* **Resultado esperado:** El sistema redirecciona en menos de 1 segundo.
-* **Resultado obtenido:** El sistema redirecciona pasados los 10 segundos.
-
-### Clasificación
-* **Severidad:** Media (esto ocasiona una espera larga para que se ejecute la accion esperada).
-* **Prioridad:** Media (esto impactaria en la paciencia del usuario y ocasionaria la ejecucion de la accion por parte de los usuarios en multiples intentos
-* o abandono del sitio por parte de los usuarios).
-
-### Entorno
-* **SO:** Windows 10/11
-* **Navegadores:** Chrome, Mozilla y Safari
-
+### 📊 Resultados de la Prueba
+* **Resultado Esperado:** De acuerdo con las heurísticas de usabilidad y performance, el sistema de enrutamiento y respuesta del servidor debe procesar y redireccionar en un umbral óptimo menor a 1.5 segundos.
+* **Resultado Obtenido:** El hilo de ejecución se bloquea experimentando una latencia severa, logrando concretar la redirección recién pasados los 10 segundos.
