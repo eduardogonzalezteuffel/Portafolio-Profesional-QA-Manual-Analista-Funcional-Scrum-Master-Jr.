@@ -1,7 +1,6 @@
-# Documentación de Análisis Funcional
+# 📋 Documentación de Análisis Funcional
 
-En esta carpeta se presentan ejemplos de levantamiento de requerimientos y definición de procesos, utilizando metodologías ágiles para asegurar el valor del producto final.
+En este directorio se presentan artefactos y ejemplos prácticos de ingeniería de requerimientos, levantamiento de necesidades de negocio y especificaciones funcionales orientadas al equipo de desarrollo y QA.
 
-## Contenido:
-* **Historias de Usuario (User Stories):** Definición detallada con criterios de aceptación.
-* **Mapeo de Procesos:** Flujos lógicos de negocio.
+## 📂 Contenido de la Sección
+* **[US-001: Registro de Nuevo Usuario](./User_Story_Registro.md):** Historia de Usuario detallada bajo estándares ágiles con Criterios de Aceptación en formato BDD y notas de persistencia técnica.
