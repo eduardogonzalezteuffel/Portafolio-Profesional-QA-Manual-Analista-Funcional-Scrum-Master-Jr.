@@ -40,7 +40,7 @@ Verificación y validación de la capa de servicios (Backend):
 
 🎓 Certificaciones y Formación
 
-*   **Testing QA** - Talento Tech (Ministerio de Educación, CABA) - 
+*   **Testing QA** - Talento Tech (Ministerio de Educación, CABA)
 *   **Historias de Usuario** - Cómo escribir User Story - Udemy.
 *   **Scrum Avanzado** - LinkedIn Learning.
 *   **Gestión de Proyectos Scrum con Jira Software** - Udemy / LinkedIn.
