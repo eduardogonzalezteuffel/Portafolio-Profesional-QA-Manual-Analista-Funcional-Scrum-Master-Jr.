@@ -34,6 +34,7 @@
 * **Cuando** el usuario intenta enviar el formulario,
 * **Entonces** el sistema debe abortar la operación y mostrar el mensaje de alerta: *"Este correo ya se encuentra registrado"*.
 
+![Diagrama BPMN 2.0 - Registro de Usuario](./diagrama-registro.png)
 ---
 
 ## ⚙️ Notas Técnicas y Persistencia (Backend & SQL)
@@ -43,4 +44,3 @@
   SELECT id, nombre, email, creado_en 
   FROM usuarios 
   WHERE email = 'usuario@dominio.com';
-  ![Diagrama BPMN 2.0 - Registro de Usuario](./diagrama-registro.png)
