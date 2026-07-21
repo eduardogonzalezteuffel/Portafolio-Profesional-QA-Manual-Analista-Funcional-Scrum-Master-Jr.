@@ -34,7 +34,7 @@
 * **Cuando** el usuario intenta enviar el formulario,
 * **Entonces** el sistema debe abortar la operación y mostrar el mensaje de alerta: *"Este correo ya se encuentra registrado"*.
 
-* ![Diagrama BPMN 2.0 - Registro de Usuario](./Diagramapng)
+![Diagrama BPMN 2.0 - Registro de Usuario](./Diagramapng)
 
 ---
 
